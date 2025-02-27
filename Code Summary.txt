@@ -1,0 +1,42 @@
+Code Explanation
+The provided Python script implements the assignment step by step:
+
+1. Dataset Preparation
+The dataset is fetched from a URL and decompressed.
+It loads data into a Pandas DataFrame and selects only the "review_body" and "star_rating" columns.
+Reviews are labeled as positive (1) or negative (0), while neutral (rating 3) reviews are discarded.
+The dataset is downsampled to 100,000 reviews per class.
+The data is split into an 80% training set and a 20% test set.
+
+2. Data Cleaning
+The reviews are converted to lowercase.
+HTML tags and URLs are removed using regular expressions.
+Non-alphabetical characters and extra spaces are removed.
+A predefined dictionary expands contractions (e.g., "can't" → "cannot").
+The average review length before and after cleaning is calculated.
+
+3. Preprocessing
+Stop words are removed using NLTK.
+Lemmatization is applied to reduce words to their root form.
+Three random samples are printed before and after preprocessing.
+The average review length before and after preprocessing is reported.
+
+4. Feature Extraction
+TF-IDF (Term Frequency-Inverse Document Frequency) is used to convert text data into numerical representations.
+The feature matrix is created for both training and testing data.
+
+5. Training and Evaluating Models
+
+Four machine learning models are trained using sklearn:
+Perceptron
+Support Vector Machine (SVM)
+Logistic Regression
+Multinomial Naïve Bayes
+
+Each model is evaluated using:
+Accuracy: Measures overall correctness.
+Precision: Ratio of correctly predicted positive reviews.
+Recall: Measures how many actual positive reviews were correctly identified.
+F1-score: Harmonic mean of precision and recall.
+
+Metrics are printed in the required format.
