@@ -4,3 +4,12 @@
 
 
 IPYNB Pdf has all the detilas of code running line by line with proper comments, explanation and output. It also has the summary of the accuracies. There is a separate .ipynb file and .py file that contains the cumulation of the .ipynb code. 
+
+
+# Code Summary
+#### Loads Amazon review dataset.
+#### Cleans and preprocesses text (lowercasing, removing noise, expanding contractions, lemmatization).
+#### Converts text into TF-IDF features.
+#### Splits data into training and testing sets.
+#### Trains and evaluates four classifiers: Perceptron, SVM, Logistic Regression, and Naïve Bayes.
+#### Prints statistical summaries and model performance metrics.
